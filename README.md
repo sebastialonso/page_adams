@@ -11,6 +11,17 @@ end
 
 That's it. Now you can call `Article.page 5` to get the fifth page of paginated results.
 
+`page` returns a hash of the following structure:
+~~~ruby
+> Article.page 0
+=> {:records=>#<ActiveRecord::Relation [#<Article id: 1>]>, :current_page=>1, :total_pages=>4}
+~~~
+
+in wich
+* the `:records` key holds an array of instances (or empty) (`ActiveRecord::Relation`)
+* the `:current_page` key holds the current retrieved page (`Integer`)
+* the `:total_pages` key holds the total number of instances pages (`Integer`)
+
 ## Installation
 Add this line to your application's Gemfile:
 
