@@ -11,7 +11,7 @@ end
 
 That's it. Now you can call `Article.page 5` to get the fifth page of paginated results.
 
-`page` returns a hash of the following structure:
+`page` returns a hash with the following structure:
 ~~~ruby
 > Article.page 0
 => {:records=>#<ActiveRecord::Relation [#<Article id: 1>]>, :current_page=>1, :total_pages=>4}
