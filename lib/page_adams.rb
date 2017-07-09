@@ -13,8 +13,9 @@ module PageAdams
   end
 
   module ClassMethods
-    def page page, page_size = 10
+    def page page, page_size = PageAdams.page_size
       page = 1 if page.nil? or not page.is_a? Integer or page <= 0
+      page_size = PageAdams.page_size unless page_size.is_a? Integer
       total_records = self.count
       # page_size = 10
       total_pages = ((total_records % page_size) == 0) ? total_records / page_size : total_records / page_size + 1
