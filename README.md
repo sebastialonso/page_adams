@@ -39,5 +39,9 @@ Or install it yourself as:
 $ gem install page_adams
 ```
 
+## Tests
+A basic suite of tests has been included into the gem, using RSpec. 
+Clone the project, enter the folder and run `rspec`.
+
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
