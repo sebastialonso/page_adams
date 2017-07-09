@@ -1,6 +1,13 @@
-require "paginator/engine"
+require "page_adams/engine"
 
-module Paginator
+module PageAdams
+  mattr_accessor :page_size
+  @@page_size = 10
+  
+  def self.setup
+    yield self  
+  end
+
   def self.included klass
     klass.extend ClassMethods
   end

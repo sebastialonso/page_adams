@@ -1,3 +1,3 @@
 class Article < ApplicationRecord
-  include Paginator
+  include PageAdams
 end

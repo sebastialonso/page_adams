@@ -1,11 +1,11 @@
-# Paginator
+# PageAdams
 ActiveRecord model pagination made easy.
 
 ## Usage
-Include Paginator in every model you want to paginate
+Include PageAdams in every model you want to paginate
 ~~~ruby
 class Article < ApplicationRecord
-  include Paginator
+  include PageAdams
 end
 ~~~
 
@@ -15,7 +15,7 @@ That's it. Now you can call `Article.page 5` to get the fifth page of paginated 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'paginator'
+gem 'page_adams'
 ```
 
 And then execute:
@@ -25,7 +25,7 @@ $ bundle install
 
 Or install it yourself as:
 ```bash
-$ gem install paginator
+$ gem install page_adams
 ```
 
 ## License

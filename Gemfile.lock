@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paginator (0.1.0)
+    page_adams (0.1.0)
       rails (~> 5.0)
 
 GEM
@@ -138,7 +138,7 @@ PLATFORMS
 DEPENDENCIES
   factory_girl_rails (~> 4.8)
   faker (~> 1.7)
-  paginator!
+  page_adams!
   rspec-rails (~> 3.5)
   sqlite3
 

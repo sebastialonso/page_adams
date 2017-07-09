@@ -1,9 +1,9 @@
 require 'faker'
 
 RSpec.describe Article, type: :model do
-  context 'once Paginator module is included' do
-    it 'should have Paginator has an ancestor' do
-      expect(Article.ancestors).to include Paginator
+  context 'once PageAdams module is included' do
+    it 'should have PageAdams has an ancestor' do
+      expect(Article.ancestors).to include PageAdams
     end
 
     it 'should have `page` as a public method' do

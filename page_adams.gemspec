@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "paginator/version"
+require "page_adams/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "paginator"
-  s.version     = Paginator::VERSION
+  s.name        = "page_adams"
+  s.version     = PageAdams::VERSION
   s.authors     = ["Sebastián González"]
   s.email       = ["sebagonz91@gmail.com"]
-  s.homepage    = "https://github.com/sebastialonso/paginator"
+  s.homepage    = "https://github.com/sebastialonso/page_adams"
   s.summary     = "Pagination made easy."
   s.description = "Automatically paginate your ActiveRecord models."
   s.license     = "MIT"
